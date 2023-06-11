@@ -42,7 +42,8 @@ jobs:
       - name: linter
 #         uses: actions/checkout@v2
         uses: docker://github/super-linter:v2.1.0
-        env: PYTHON_PYLINT_CONFIG_FILE=.pylintrc
+        env: 
+             PYTHON_PYLINT_CONFIG_FILE=.pylintrc
             
 #   py_linter:
 #     runs-on: ubuntu-latest
