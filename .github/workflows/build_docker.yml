@@ -35,16 +35,12 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-#       - name: Linter
-# #         uses: actions/checkout@v2
-#         uses: docker://github/super-linter:v2.1.0
-#         env: 
-#              PYTHON_PYLINT_CONFIG_FILE: .pylintrc
-  linter:
-      runs-on: ubuntu-latest
-      steps:
-          - uses: actions/checkout@v2
-          - uses: docker://github/super-linter:v2.1.0
+
+#   linter:
+#       runs-on: ubuntu-latest
+#       steps:
+#           - uses: actions/checkout@v2
+#           - uses: docker://github/super-linter:v2.1.0
             
 #   py_linter:
 #     runs-on: ubuntu-latest
