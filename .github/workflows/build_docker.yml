@@ -42,4 +42,4 @@ jobs:
         - uses: actions/checkout@v2
         - uses: docker://github/super-linter:v2.1.0
           with:
-            args: "--ignore-missing-imports"
+            options: "--ignore-import-errors"
