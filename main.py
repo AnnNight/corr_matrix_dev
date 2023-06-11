@@ -24,3 +24,4 @@ for i in range(len(market_data_corr.columns)):
     while j < i:
         data_.append(market_data_corr.iloc[i][j])
         j += 1
+        
