@@ -40,15 +40,20 @@ jobs:
 #         uses: docker://github/super-linter:v2.1.0
 #         env: 
 #              PYTHON_PYLINT_CONFIG_FILE: .pylintrc
+  linter:
+      runs-on: ubuntu-latest
+      steps:
+          - uses: actions/checkout@v2
+          - uses: docker://github/super-linter:v2.1.0
             
-  py_linter:
-    runs-on: ubuntu-latest
-    steps:
-       - uses: actions/checkout@v2  
-       - name: Python Linter
-         uses: sunnysid3up/python-linter@v0.1-beta.7
-         with:
-           mypy-options: "--ignore-missing-imports --show-error-codes"
-           pylint-options: "--rcfile=setup.cfg"
-           isort-options: "-w 100"
-           django: true
+#   py_linter:
+#     runs-on: ubuntu-latest
+#     steps:
+#        - uses: actions/checkout@v2  
+#        - name: Python Linter
+#          uses: sunnysid3up/python-linter@v0.1-beta.7
+#          with:
+#            mypy-options: "--ignore-missing-imports --show-error-codes"
+#            pylint-options: "--rcfile=setup.cfg"
+#            isort-options: "-w 100"
+#            django: true
