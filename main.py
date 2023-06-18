@@ -6,7 +6,7 @@ print("Please, choose at least 2 stocks and write them with the space")
 st = list(map(str, input().split()))
 # stocks = ['ADS.DE', 'BMW.DE', 'CBK.DE', 'SAP.DE', 'ALV.DE']
 # # , 'SAP.DE', 'ALV.DE', 'BAS.DE', 'BAYN.DE', 'BEI.DE', 'CON.DE',
-# #           'FRE.DE', 'DBK.DE', 'DB1.DE', 'LHA.DE', 'DPW.DE', 'DTE.DE', 'EOAN.DE', 'HEI.DE', 'HEN3.DE',
+# #         'FRE.DE', 'DBK.DE', 'DB1.DE', 'LHA.DE', 'DPW.DE', 'DTE.DE', 'EOAN.DE', 'HEI.DE', 'HEN3.DE',
 # #           'IFX.DE', 'LIN.DE', 'MRK.DE', 'MUV2.DE', 'PSM.DE', 'RWE.DE', 'SIE.DE', 'TKA.DE', 'VOW3.DE', 'VNA.DE', 'MBG.DE']
 stocks = st
 stocks.sort()
